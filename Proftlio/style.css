@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;0,900;1,300;1,900&display=swap');
+
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+   background-color: black;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 1px;
+  
+}
+.container{
+    padding: 10px 10%;
+    
+   
+}
+#header{
+    background-image: url("harsha.jpg");
+    height: 100vh;
+    width: 100%;
+      
+    /* background-size: cover; */
+    background-position: center;
+    
+}
+#header .container nav ul{
+    
+        overflow: hidden;
+ 
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+      padding-left: 60%;
+      padding-top: 2%;
+      
+     
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.logo{
+    font-size: 50px;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+nav ul {
+    
+}
+.logo span{
+    color: rgb(50, 20, 218) ;
+    text-shadow:  1px 1px 1px rgb(147, 143, 143);
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:rgb(45, 20, 190);  
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text ul li{
+    list-style: none;
+    
+
+}
+.header-text{
+    margin-top: 20%;
+}
+.text-1{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.text-2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.text-3{
+ font-size: 30px;   
+ letter-spacing: 1px;
+}
+.text-3 span{
+    color: rgb(51, 21, 219);
+    font-weight: bold;
+    text-shadow:  1px 1px 1px rgb(147, 143, 143);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+   
+    flex-wrap: wrap;
+}
+.col-1 img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border:3px solid rgb(50, 50, 54);
+    
+}
+#about{
+    padding-top: 30px;
+    
+    background-position: center;
+}
+.col-1{
+    flex-basis: 40%;
+    
+}
+.col-2{
+    flex-basis: 55%;
+   
+}
+.abt{
+    font-size: 30px;
+}
+.abt1{
+    font-size: 13px;
+}
+.table-contents{
+   
+   margin-top: 15px;
+
+}
+.table-contents ul li{
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 20px;
+
+    position: relative;
+}
+.table-contents ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:rgb(45, 20, 190);  
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.table-contents ul li:hover::after{
+    width:100%;
+}
+.tab-body ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.tab-body ul li{
+    font-size: 12px;
+}
+.edu{
+    display: none;
+}
+.Proj{
+    display: none;
+}
+.Hobbi{
+    display: none;
+}
+.tab-body span{
+    color:rgb(25, 0, 255);
+    
+}
+.tab-body1{
+    display: none;
+}
+.skill-content i {
+font-size: 150px;
+
+}
+.skill-content{
+display:flex ;
+justify-content: space-between;
+padding: 30px;
+}
+.container span{
+    color: rgb(25, 0, 255);
+}
+.container{
+    padding-left:50px ;
+    padding-bottom: 50px;
+   
+}
+.container h1{
+    text-shadow: 1px 1px 1px gray;
+}
+.skill-content i:hover{
+    color: rgb(25, 0, 255);
+}
+.skill-content a{
+   color: white;
+}
+.skill-content  h3{
+    font-size: 20px;
+    padding:12px ;
+}
+.skill-content div div{
+    background-color: rgb(35, 36, 36) ;
+    /* width: 150px;
+    height: 150px; */
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+  padding: 25px;
+  border-radius: 8px;
+}
+.container h2{
+    font-size: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contact-col1 p i{
+font-size: 25px;
+padding: 8px;
+color: blue;
+}
+ 
+.contact-col1 a{
+    
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+   
+  color: rgb(161, 163, 165);
+  display:inline-block;
+    transition: transform 0.4s;
+}
+
+.contact-col1 a:hover{
+    color: rgb(25, 0, 255);
+    transform: translateY(-5px);
+}
+
+form input,form textarea{
+    width: 100%;
+    font-size: 15px;
+    margin:15px 0;
+    padding: 15px;
+    background-color: rgb(35, 36, 36) ;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    color:white ;
+}
+.contact-col1{
+    flex-basis: 35%;
+}
+.contact-col2{
+    flex-basis: 60%;
+}
+.contact-col2 form{
+    width: 100%;
+}
+.contact-col2 button{
+    background-color:rgb(25, 0, 255) ;
+    
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 15px;
+}
+nav .fa-solid{
+    display: none;
+}
+/*css for small screen*/
+@media only screen and (max-width:600px){
+     #header{
+               background-image: url("small.png");
+     }
+     .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+     }
+     .header-text h1{
+        font-size: 30px;
+     } 
+
+     nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: rgb(0, 0, 255);
+        position: fixed;
+        top: 0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+
+footer{
+    background-color: rgb(35, 36, 36) ;
+    font-size: 11px;
+}
+footer div{
+    padding: 18px;
+  text-align: center;
+}
